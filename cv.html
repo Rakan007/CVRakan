@@ -3,205 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Rakan Danendra Darmawan</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #1a1a1a;
-            color: #ffffff;
-        }
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: #2a2a2a;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-        }
-        header {
-            text-align: left;
-            border-bottom: 2px solid #444;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-        }
-        h1 {
-            color: #fff;
-            text-transform: uppercase;
-            margin: 0;
-            font-size: 2.5em;
-            letter-spacing: 2px;
-        }
-        .subtitle {
-            font-size: 1.2em;
-            color: #4CAF50;
-            margin-top: 5px;
-            font-weight: bold;
-        }
-        h2 {
-            color: #4CAF50;
-            margin-top: 30px;
-            text-transform: uppercase;
-            font-size: 1.2em;
-        }
-        .about-text {
-            color: #cccccc;
-            text-align: justify;
-        }
-        .grid-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        .projects-list, .skills-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        .projects-list li, .skills-list li {
-            background: #333;
-            margin-bottom: 8px;
-            padding: 10px;
-            border-radius: 5px;
-            border-left: 4px solid #4CAF50;
-        }
-        .game-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-            margin-top: 15px;
-        }
-        .game-card {
-            background: #333;
-            padding: 10px;
-            text-align: center;
-            border-radius: 8px;
-        }
-        .game-card img {
-            width: 100%;
-            border-radius: 5px;
-            height: 100px;
-            object-fit: cover;
-            margin-bottom: 10px;
-        }
-        .education-item {
-            margin-bottom: 15px;
-        }
-        .education-item h3 {
-            margin: 0;
-            color: #fff;
-            font-size: 1.1em;
-        }
-        .education-item p {
-            margin: 5px 0;
-            color: #aaa;
-        }
-        .contact-footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 2px solid #444;
-            text-align: center;
-        }
-        .contact-footer p {
-            margin: 5px 0;
-            color: #ccc;
-        }
-        .copyright {
-            margin-top: 20px;
-            font-size: 0.8em;
-            color: #777;
-        }
-    </style>
+    <title>Portofolio - Rakan Danendra Darmawan</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Menggunakan Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <nav>
+        <div class="logo">RD.</div>
+        <ul class="nav-links">
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#skills">Kemampuan</a></li>
+            <li><a href="#projects">Projek</a></li>
+            <li><a href="#education">Pendidikan</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
 
-<div class="container">
-    <!-- Bagian Header -->
-    <header>
-        <h1>RAKAN DANENDRA DARMAWAN</h1>
-        <div class="subtitle">SOFTWARE ENGINEERING</div>
-        <p>Resume</p>
+    <header id="home">
+        <div class="hero-content">
+            <!-- Foto Profil -->
+            <div class="profile-container">
+                <img src="profile.jpeg" alt="Foto Rakan Danendra Darmawan" class="profile-pic">
+            </div>
+            
+            <h1>Rakan Danendra Darmawan</h1>
+            <h2><i class="fas fa-code"></i> Software Engineering</h2>
+            <p>Fokus pada Pembuatan Aplikasi Web & Pengembangan Backend</p>
+            <a href="#contact" class="btn">Hubungi Saya</a>
+        </div>
     </header>
 
-    <div class="grid-container">
-        <!-- Kolom Kiri -->
-        <div>
-            <!-- Bagian Tentang Saya -->
-            <section>
-                <h2>TENTANG SAYA</h2>
-                <p class="about-text">Saya adalah software engineering dengan fokus pada pembuatan aplikasi web dan pengembangan backend. Saya sangat tertarik dengan teknologi dan selalu berusaha memberikan solusi yang efektif dan efisien dalam setiap proyek yang saya kerjakan.</p>
-            </section>
-
-            <!-- Bagian Projek Web -->
-            <section>
-                <h2>PROJEK WEB</h2>
-                <ul class="projects-list">
-                    <li>Top Up Game Store</li>
-                    <li>Kafe R</li>
-                    <li>Film imdb</li>
-                </ul>
-            </section>
-        </div>
-
-        <!-- Kolom Kanan -->
-        <div>
-            <!-- Bagian Kemampuan -->
-            <section>
-                <h2>KEMAMPUAN</h2>
-                <ul class="skills-list">
-                    <li>HTML, CSS, JavaScript, TypeScript</li>
-                    <li>Laravel, Prisma, Vue, Tailwind CSS, Node</li>
-                    <li>Git, Mysql, PHP</li>
-                </ul>
-            </section>
-
-            <!-- Bagian Pendidikan -->
-            <section>
-                <h2>PENDIDIKAN</h2>
-                <div class="education-item">
-                    <h3>SMKN 4 BANDUNG (2022-2025)</h3>
-                    <p>Mempelajari pemrograman, algoritma, serta pengembangan web, aplikasi, dan game.</p>
-                </div>
-                <div class="education-item">
-                    <h3>LearningX Academy</h3>
-                </div>
-            </section>
-        </div>
-    </div>
-
-    <!-- Bagian Game (Bawah) -->
-    <section>
-        <h2>GAME PROJEK</h2>
-        <div class="game-grid">
-            <div class="game-card">
-                <!-- Ganti atribut src dengan URL gambar 2d parkour Anda -->
-                <img src="https://via.placeholder.com/150/8fbc8f/000000?text=2D+Parkour" alt="2d parkour">
-                <div>2d parkour</div>
-            </div>
-            <div class="game-card">
-                <!-- Ganti atribut src dengan URL gambar Flappy bird Anda -->
-                <img src="https://via.placeholder.com/150/87ceeb/000000?text=Flappy+Bird" alt="Flappy bird">
-                <div>Flappy bird</div>
-            </div>
-            <div class="game-card">
-                <!-- Ganti atribut src dengan URL gambar tic tac toe Anda -->
-                <img src="https://via.placeholder.com/150/ffe4e1/000000?text=Tic+Tac+Toe" alt="tic tac toe">
-                <div>tic tac toe</div>
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-text">
+                <p>Saya adalah software engineering dengan fokus pada pembuatan aplikasi web dan pengembangan backend. Saya sangat tertarik dengan teknologi dan selalu berusaha memberikan solusi yang efektif dan efisien dalam setiap proyek yang saya kerjakan.</p>
             </div>
         </div>
     </section>
 
-    <!-- Bagian Kontak & Footer -->
-    <footer class="contact-footer">
-        <h2>KONTAK</h2>
-        <p>Email: rakandanendrad@gmail.com</p>
-        <p>Telepon: +62 898-7967-980</p>
-        <div class="copyright">
-            &copy; 2024 Rakan Danendra Darmawan. All rights reserved.
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Kemampuan</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">Laravel</span>
+                <span class="skill-tag">Prisma</span>
+                <span class="skill-tag">Vue</span>
+                <span class="skill-tag">Tailwind CSS</span>
+                <span class="skill-tag">Node</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Mysql</span>
+                <span class="skill-tag">PHP</span>
+            </div>
         </div>
-    </footer>
-</div>
+    </section>
 
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projek</h2>
+            <div class="project-categories">
+                <div class="category">
+                    <h3><i class="fas fa-globe"></i> Projek Web</h3>
+                    <ul>
+                        <li>Top Up Game Store</li>
+                        <li>Kafe R</li>
+                        <li>Film imdb</li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3><i class="fas fa-gamepad"></i> Projek Game</h3>
+                    <ul>
+                        <li>2d parkour</li>
+                        <li>Flappy bird</li>
+                        <li>tic tac toe</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title">Pendidikan</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>SMKN 4 BANDUNG</h3>
+                    <p class="date">(2022-2025)</p>
+                    <p>Mempelajari pemrograman, algoritma, serta pengembangan web, aplikasi, dan game.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>LearningX Academy</h3>
+                    <p class="date">Program Pembelajaran Teknologi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Kontak</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> rakandanendrad@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +62 898-7967-980</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rakan Danendra Darmawan. All rights reserved.</p>
+    </footer>
 </body>
 </html>
